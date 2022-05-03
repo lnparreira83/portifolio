@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Roboto:ital,wght@0,300;1,100;1,300;1,700&display=swap" rel="stylesheet">
+    <title>LP</title>
+</head>
+<header>
+    <div>
+        <img src="logo.jpg" alt="Logo LP">
+    </div>
+    <ul>
+        <li><a target="_blank" href="https://github.com/lnparreira83">github</a></li>
+        <li><a target="_blank" href="mailto:lnparreira83@gmail.com">email</a></li>
+        <li><a target="_blank" href="https://wa.me/61999081716">whatsapp</a></li>
+    </ul>
+</header>
+<main>
+    <section class="container">
+        <div class="name">
+            <h1>Lucas Parreira</h1>
+            <h5>Developer</h5>
+        </div>
+ 
+        <div onclick="displayAbout()" id="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2%" height="2%" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16" id="animation">
+                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+              </svg>
+        </div>
+ 
+        <div style="display:none" id="about">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem unde sit, blanditiis quae consequuntur reprehenderit architecto beatae laudantium ipsum. Vero alias vel nulla officia aliquid veritatis rerum, nemo impedit qui.
+            </p>
+        </div>
+ 
+        <div class="form">
+            <form action="">
+                <p>Deixe seu contato!</p>
+                <input type="text" placeholder="seu melhor email :)">
+                <button>enviar</button>
+            </form>
+        </div>
+    </section>
+ 
+</main>
+
+<script>
+    function displayAbout(){
+        var arrow = document.getElementById('animation');
+        arrow.classList.toggle('rotate');
+        var about = document.getElementById('about');
+        about.classList.toggle('show');
+    }
+</script>
+<body>
+   
+</body>
+</html>
